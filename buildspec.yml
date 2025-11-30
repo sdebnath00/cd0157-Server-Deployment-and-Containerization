@@ -20,6 +20,8 @@ phases:
       - curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.32.2/2024-01-04/bin/linux/amd64/kubectl
       # Download the kubectl checksum file
       - curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.32.2/2024-01-04/bin/linux/amd64/kubectl.sha256
+      # Added 
+      cat kubectl.sha256
       # Validate the kubectl binary against the checksum file
       - sha256sum -c kubectl.sha256
       # Install kubectl
